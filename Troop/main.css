@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --main-1: #E9D2B9;
+  --main-2: #FAE7D0;
+  --main-4: #162441;
+
+  --accent-1: #F0A202;
+  --accent-2: #E4B345;
+  --accent-3: #AEA174;
+
+  --text-2: #67686A;
+  --text-3: #A4A9AF;
+
+}
+
+:root {
+  --font-sans: "Instrument Sans", sans-serif;
+}
+
+.container {
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+@layer components {
+  .button {
+    font-size: 16px;
+    background-color: #162441;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 4px;
+  }
+  .button2 {
+    font-size: 16px;
+    background-color: #E4B345;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 100px;
+  }
+  .mask-left-fade {
+    -webkit-mask-image: radial-gradient(ellipse at right center, black 0%, transparent 100%);
+    mask-image: radial-gradient(ellipse at right center, black 0%, transparent 1000%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+
+  .stroke-black {
+    stroke: black;
+  } 
+
+  .stroke-white {
+      stroke: white;
+  }
+
+  
+}
+
+
