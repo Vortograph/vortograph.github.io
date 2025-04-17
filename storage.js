@@ -181,7 +181,7 @@ for (const event of troopEvents) {
     fullDiv.className = 'full-event-wrapper h-fit text-[var(--text-2)] hover:text-white hover:bg-[var(--main-4)] hover:border-[var(--main-4)] transition-all duration-300 ease-in-out cursor-pointer';
 
     const newDiv = document.createElement('div');
-    newDiv.className = 'event flex flex-wrap items-center gap-[5px] py-5 border-b border-black';
+    newDiv.className = 'event flex flex-col sm:flex-row items-center gap-[5px] py-5 border-b border-black';
 
     // Create image element
     const img = document.createElement('div');
@@ -189,7 +189,7 @@ for (const event of troopEvents) {
     img.className = 'w-[81px] h-[81px] bg-cover bg-center rounded-full bg-[var(--main-4)] flex items-center justify-center';
 
     const innerDiv1 = document.createElement('div');
-    innerDiv1.className = 'flex flex-col font-semibold w-[285px]';
+    innerDiv1.className = 'flex flex-col text-center sm:text-left font-semibold w-[285px]';
 
     const dateP = document.createElement('p');
     const timeP = document.createElement('p');
@@ -199,7 +199,7 @@ for (const event of troopEvents) {
     innerDiv1.appendChild(timeP);
 
     const innerDiv2 = document.createElement('div');
-    innerDiv2.className = 'font-medium text';
+    innerDiv2.className = 'font-medium text text-center';
     innerDiv2.textContent = event.header;
 
     newDiv.appendChild(img);
