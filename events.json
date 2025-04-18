@@ -38,7 +38,7 @@
             "gps": "40.123456, -85.123456",
             "Stime": "10:00 AM",
             "Etime": "4:00 PM",
-            "image": "images/icons/SCOUT.png"
+            "image": "images/icons/Scout.png"
         },
         {
             "title": "Community Service Day",
@@ -51,7 +51,7 @@
             "gps": "39.876543, -86.345678",
             "Stime": "8:00 AM",
             "Etime": "12:00 PM",
-            "image": "images/icons/SERVICE.png"
+            "image": "images/icons/Service.png"
         },
         {
             "title": "Firecrafter Campfire",
@@ -90,7 +90,7 @@
             "gps": "40.123456, -85.123456",
             "Stime": "9:00 AM",
             "Etime": "4:00 PM",
-            "image": "images/icons/SCOUT.png"
+            "image": "images/icons/Scout.png"
         },
         {
             "title": "Holiday Service Project",
@@ -103,7 +103,7 @@
             "gps": "39.717171, -86.252525",
             "Stime": "1:00 PM",
             "Etime": "5:00 PM",
-            "image": "images/icons/SERVICE.png"
+            "image": "images/icons/Service.png"
         },
         {
             "title": "Winter Camping Trip",
@@ -129,7 +129,7 @@
             "gps": "39.000000, -86.500000",
             "Stime": "8:00 AM",
             "Etime": "6:00 PM",
-            "image": "images/icons/SCOUT.png"
+            "image": "images/icons/Scout.png"
         },
         {
             "title": "Spring Service Day",
@@ -142,7 +142,7 @@
             "gps": "39.866666, -86.123456",
             "Stime": "9:00 AM",
             "Etime": "1:00 PM",
-            "image": "images/icons/SERVICE.png"
+            "image": "images/icons/Service.png"
         }
     ]
 }
