@@ -1,0 +1,148 @@
+{
+    "events": [
+
+        {
+            "title": "Firecrafter Ceremony",
+            "Sdate": "2025-05-10",
+            "Edate": "2025-05-10",
+            "header": "Firecrafter Induction",
+            "description": "Join us for the Firecrafter induction ceremony.",
+            "location": "Camp Belzer",
+            "locDesc": "6102 Boy Scout Rd, Indianapolis, IN 46226",
+            "gps": "39.123456, -86.123456",
+            "Stime": "6:00 PM",
+            "Etime": "8:00 PM",
+            "image": "images/icons/FC.png"
+        },
+        {
+            "title": "Camping Trip",
+            "Sdate": "2025-06-15",
+            "Edate": "2025-06-17",
+            "header": "Summer Camping",
+            "description": "Enjoy a weekend of camping and outdoor activities.",
+            "location": "Brown County State Park",
+            "locDesc": "1405 State Road 46 W, Nashville, IN 47448",
+            "gps": "39.165325, -86.265472",
+            "Stime": "9:00 AM",
+            "Etime": "5:00 PM",
+            "image": "images/icons/Camping.png"
+        },
+        {
+            "title": "Scout Skills Workshop",
+            "Sdate": "2025-07-20",
+            "Edate": "2025-07-20",
+            "header": "Scout Skills",
+            "description": "Learn essential scouting skills in this hands-on workshop.",
+            "location": "Camp Kikthawenund",
+            "locDesc": "7651 W 500 N, Frankton, IN 46044",
+            "gps": "40.123456, -85.123456",
+            "Stime": "10:00 AM",
+            "Etime": "4:00 PM",
+            "image": "images/icons/SCOUT.png"
+        },
+        {
+            "title": "Community Service Day",
+            "Sdate": "2025-08-05",
+            "Edate": "2025-08-05",
+            "header": "Service Project",
+            "description": "Help clean up the local park and plant trees.",
+            "location": "Eagle Creek Park",
+            "locDesc": "7840 W 56th St, Indianapolis, IN 46254",
+            "gps": "39.876543, -86.345678",
+            "Stime": "8:00 AM",
+            "Etime": "12:00 PM",
+            "image": "images/icons/SERVICE.png"
+        },
+        {
+            "title": "Firecrafter Campfire",
+            "Sdate": "2025-09-10",
+            "Edate": "2025-09-10",
+            "header": "Campfire Night",
+            "description": "Celebrate with a traditional Firecrafter campfire.",
+            "location": "Camp Belzer",
+            "locDesc": "6102 Boy Scout Rd, Indianapolis, IN 46226",
+            "gps": "39.123456, -86.123456",
+            "Stime": "7:00 PM",
+            "Etime": "9:00 PM",
+            "image": "images/icons/FC.png"
+        },
+        {
+            "title": "Fall Camping Trip",
+            "Sdate": "2025-10-12",
+            "Edate": "2025-10-14",
+            "header": "Fall Adventure",
+            "description": "Experience the beauty of fall during this camping trip.",
+            "location": "Turkey Run State Park",
+            "locDesc": "8121 Park Rd, Marshall, IN 47859",
+            "gps": "39.888888, -87.222222",
+            "Stime": "10:00 AM",
+            "Etime": "3:00 PM",
+            "image": "images/icons/Camping.png"
+        },
+        {
+            "title": "Scout Leadership Training",
+            "Sdate": "2025-11-05",
+            "Edate": "2025-11-05",
+            "header": "Leadership Skills",
+            "description": "Develop leadership skills in this interactive training session.",
+            "location": "Camp Kikthawenund",
+            "locDesc": "7651 W 500 N, Frankton, IN 46044",
+            "gps": "40.123456, -85.123456",
+            "Stime": "9:00 AM",
+            "Etime": "4:00 PM",
+            "image": "images/icons/SCOUT.png"
+        },
+        {
+            "title": "Holiday Service Project",
+            "Sdate": "2025-12-15",
+            "Edate": "2025-12-15",
+            "header": "Giving Back",
+            "description": "Spread holiday cheer by volunteering at the food bank.",
+            "location": "Gleaners Food Bank",
+            "locDesc": "3737 Waldemere Ave, Indianapolis, IN 46241",
+            "gps": "39.717171, -86.252525",
+            "Stime": "1:00 PM",
+            "Etime": "5:00 PM",
+            "image": "images/icons/SERVICE.png"
+        },
+        {
+            "title": "Winter Camping Trip",
+            "Sdate": "2026-01-20",
+            "Edate": "2026-01-22",
+            "header": "Winter Adventure",
+            "description": "Brave the cold and enjoy a winter camping experience.",
+            "location": "Pokagon State Park",
+            "locDesc": "450 Ln 100 Lake James, Angola, IN 46703",
+            "gps": "41.700000, -85.000000",
+            "Stime": "9:00 AM",
+            "Etime": "3:00 PM",
+            "image": "images/icons/Camping.png"
+        },
+        {
+            "title": "Scout Jamboree",
+            "Sdate": "2026-03-15",
+            "Edate": "2026-03-17",
+            "header": "Jamboree Fun",
+            "description": "Join scouts from across the region for a jamboree.",
+            "location": "Camp Ransburg",
+            "locDesc": "7599 E Waldrip Creek Rd, Bloomington, IN 47401",
+            "gps": "39.000000, -86.500000",
+            "Stime": "8:00 AM",
+            "Etime": "6:00 PM",
+            "image": "images/icons/SCOUT.png"
+        },
+        {
+            "title": "Spring Service Day",
+            "Sdate": "2026-04-10",
+            "Edate": "2026-04-10",
+            "header": "Community Cleanup",
+            "description": "Join us for a spring cleanup at the local community center.",
+            "location": "Broad Ripple Park",
+            "locDesc": "1500 Broad Ripple Ave, Indianapolis, IN 46220",
+            "gps": "39.866666, -86.123456",
+            "Stime": "9:00 AM",
+            "Etime": "1:00 PM",
+            "image": "images/icons/SERVICE.png"
+        }
+    ]
+}
