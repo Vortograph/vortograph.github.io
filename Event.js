@@ -4,7 +4,7 @@ function calculateDaysAway(eventDate) {
     const event = new Date(eventDate);
     const timeDiff = event - today;
     var day = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
-    return day > 0 ? (day > 1 ? day + " Days Away" : "Tomorrow") : "Today";
+    return day > 0 ? (day > 1 ? (day > 60 ? "60+ Days away" : day + " Days Away" ): "Tomorrow") : "Today";
 }
 
 const list = document.getElementById("list");
