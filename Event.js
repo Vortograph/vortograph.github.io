@@ -9,7 +9,7 @@ function calculateDaysAway(eventDate) {
 
 const list = document.getElementById("list");
 
-fetch('storage.json')
+fetch('Storage.json')
     
     .then(response => response.json())
     .then(data => {
