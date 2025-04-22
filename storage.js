@@ -1,7 +1,7 @@
 // Select the parent div
 const parentDiv = document.getElementById('parent');
 
-fetch('storage.json')
+fetch('Storage.json')
     .then(response => response.json())
     .then(data => {
         const troopEvents = data.events;
