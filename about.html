@@ -1,0 +1,414 @@
+<link rel="stylesheet" href="main.css" />
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="Menu.js" defer></script>
+  </head>
+  <body class="bg-gray-100">
+    <!--imports-->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+<div class="hidden translate-y-[356px] z-10 "></div>
+
+<!--Header-->
+<div class="bg-[#E9D3B9]">
+  
+  <header class="px-5 z-10">
+    <div class="container flex h-[70px] justify-between py-5 md:items-center">
+      <div class="flex gap-[4px] justify-center items-center">
+        <img src="images/tag.png"> 
+        <strong class="text-[24px]">Troop 306</strong>
+    </div>
+      <nav class="text-white md:text-black">
+        <div id="tag" class="absolute z-10 -mx-5 -my-[386px] transition-transform duration-300 md:hidden">
+          <svg width="116" height="386" viewBox="0 0 116 346" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 -146H116V288C116 320.033 90.0325 346 58 346V346C25.9675 346 0 320.033 0 288V-146Z" fill="#162441" />
+          </svg>
+        </div>
+        <ul class=" relative z-10 mr-5 flex flex-col items-center gap-[30px] md:mr-0 md:flex-row">
+          <li class="md:hidden">
+            <button id="menu" onclick="document.getElementById('tag').classList.toggle('translate-y-[356px]'); document.getElementById('Home').classList.toggle('hidden'); document.getElementById('About').classList.toggle('hidden'); document.getElementById('Troop').classList.toggle('hidden'); document.getElementById('Resources').classList.toggle('hidden'); document.getElementById('Join').classList.toggle('hidden')">
+              <svg width="75" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="stroke-black" d="M2 2.67432H32M2 13.8899H32M2 25.1055H32" stroke-width="3.75" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </li>
+
+          <li>
+            <a href="index.html" id="Home" class="hidden hover:underline md:block">Home</a>
+          </li>
+          <li>
+            <a href="#" id="About" class="hidden underline md:block">About</a>
+          </li>
+          <li>
+            <a href="#" id="Troop" class="hidden hover:underline md:block">Troop</a>
+          </li>
+          <li>
+            <a href="events.html" id="Resources" class="hidden hover:underline md:block">Resources</a>
+          </li>
+          <li>
+            <a href="#" id="Join" class="button2 hidden rounded-4xl hover:underline md:block md:rounded-none text-black"><strong>Join</strong></a>
+        </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="relative flex items-center z-0 justify-center py-[7vw] bg-cover bg-center" style="background-image: url('images/Welcome.png');">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/50 z-0"></div>
+  
+    <!-- Text on top -->
+    <h1 class="relative text-center [font-family:'Black_Han_Sans',sans-serif] text-[75px] text-white md:text-[100px]">
+      Welcome to Troop 306
+    </h1>
+  </div>
+  
+  
+</div>
+
+<!--Main-->
+<div class="bg-[var(--main-4)] h-fit p-5 ">
+<!--Text/Image div Mobile-->
+<div class="relative flex h-fit flex-row justify-center md:hidden ">
+  <h3 class="mb-16 w-[374px] font-[poppins] text-[40px] leading-[60px] font-bold text-[var(--accent-2)]">WELCOME TO OUR TROOP AND THANKS FOR VISITING</h3>
+  <div class="absolute right-[40px] bottom-[80px] mx-5 h-[135px] w-[125px]">
+      <img
+    src="images/transparent-chris.png"
+    alt="Chris"
+    width="281"
+    height="284"
+    class="float-right mr-4 hidden md:block mt-[50px]"
+  />
+
+  </div>
+</div>
+
+<!--Text/Image div Desktop-->
+<div class="font-[poppins] md:px-[100px] text-[var(--main-1)]">
+  <div class="relative flex h-fit flex-row justify-center">
+  <h3 class="mb-16  hidden md:block font-[poppins] text-[38px] leading-[60px] font-bold text-[var(--accent-2)]">
+    WELCOME TO OUR TROOP AND THANKS FOR VISITING</h3>
+</div>
+  <p>
+    The past 15 years as Scoutmaster I have observed:
+  </p>
+
+  <!-- Insert the SVG with float-right applied to wrap the text around it -->
+  <div class="space-y-2 my-3">
+    <img
+  src="images/transparent-chris.png"
+  alt="Chris"
+  width="281"
+  height="284"
+  class="float-right mr-4 hidden md:block mt-[50px]"
+/>
+
+
+    <div class="flex items-start gap-2">
+      <span class="w-6 shrink-0">1.</span>
+      <p>Boys love to explore and challenge themselves in the great outdoors.</p>
+    </div>
+    <div class="flex items-start gap-2">
+      <span class="w-6 shrink-0">2.</span>
+      <p>Boys need positive male role models</p>
+    </div>
+  </div>
+
+  <p>
+    I have continued to invest my time and energy into Scouting to make the 
+    most of those two points. Boy Scouts of America is one of the last organizations 
+    to offer a boy the ability to explore and be a little wild while learning and refining
+    his sense of worth in this world. All this backed by the belief in God and the 
+    powerful strength that comes by the demonstrating and mentoring from older 
+    scouts and adults.
+    <br><br>
+    Every scout is in control of their advancement and leadership as they progress in our troop. Boys advance at their pace, not on a set schedule like in Cub Scouts. Some scouts rank up quickly, others just want to camp and do not worry about rank advancement until they are older. The scouts in both categories are still accomplishing my goal of teaching and growing boys into young leaders.
+    <br><br>
+    In our troop you will have new opportunities that most other organization cannot offer, such as high adventures in backpacking, canoeing, climbing, and spelunking. We offer new experiences such as going to the National Jamboree, survival campouts, and service opportunities all around Hendricks County, our state, and even worldwide.
+    <br><br>
+    I encourage parents, grandparents, and guardians to be involved in all our adventures as well as leadership roles within the troop. I am very fortunate to continue to have such a great support system in Troop 306. I write this not because I “MUST HAVE” more help, I write it because I want other adults to see what I have enjoyed for so many years and to make time to be a part of their son’s memories when they first try to ski, rock climb, or survive 10 days on the trail with nothing but what's in their backpack.
+  </p>
+</div>
+
+
+
+
+<!--Unaltered Text-->
+<div class=" font-[poppins] md:px-[100px]">
+  <h1 class="text-[50px] text-[var(--accent-2)] font-bold mb-[25px]">
+    Troop 306 Basics
+  </h1>
+  <ul class="flex flex-col gap-4 text-[var(--main-1)]">
+    <h2 class="text-white text-2xl font-bold ">
+      64 Years of Adventure
+    </h2>
+    <p>
+      Troop 306 was formed in 1960 and is charted by Parents for Scouting, Inc. We are dedicated to helping boys become leaders through guided leadership experiences in scouting skills, advancement, and recreational activities.
+    </p>
+    <p>
+      We meet most every Tuesday evening from 7:00 to 8:30 at the Avon Youth Foundation building (affectionately called "The Scout Hut") located west of the AJAA baseball diamonds off 100 South. Scouts are expected to wear a Class A uniform (official Boy Scout shirt) to all meetings and most outings.
+    </p>
+    <h2 class="text-white text-2xl font-bold ">
+      Weekly Meetings
+    </h2>
+    <p>
+      <p class="ml-2.5 ">
+      &bull; Troop meets every Tuesday 7:00 PM to 8:30 PM
+      <br>
+      &bull; Class A shirts required at meetings and most functions
+
+      </p>
+      SCOUTMASTER NOTE: We all know every scout will loss their shirt at least once during their time in the troop, so don't let that keep you home 
+    </p>
+    <h2 class="text-white text-2xl font-bold ">
+      We Are a Low Cost Troop
+    </h2>
+    <p>
+      Our annual dues are only $165, which includes:
+      <br>
+      <p class="ml-2.5">
+      &bull; Free camping ALL YEAR (guests are typically $5 - $10 per event)<br>
+      &bull; BSA Boy Scout handbook for new scouts<br>
+      &bull; All patches and awards<br>
+      &bull; All Council Fees<br>
+      </p>
+      * Special events, such as skiing, theme parks, and Summer Camp are additional costs per scout and guest.
+Adult recharter is $65
+    </p>
+  </ul>
+
+   <h1 class="text-[50px] text-[var(--accent-2)] font-bold mb-[25px]" >
+    Camping and Adventures
+  </h1>
+  <ul class="flex flex-col gap-4 text-[var(--main-1)]">
+    <p>
+      
+We camp once a month (in hot or cold weather) and attend Scout Camporees throughout the year. We also spend one week during the summer at a scout summer camp. Every two to three years our troop hosts our own summer camp. Every two to three years we also journey out to a high adventure trip to Philmont, Boundary Waters, or to a National Jamboree.
+<br><br>
+Equipment:
+<br><br>
+New scouts should always have their 10 Essentials on every trip. A full list available in the BSA Scout handbook and at troop306avon.com/10. Additionally each scout should have:
+<div class="flex flex-wrap gap-[50px]">
+    <div>
+      <h2 class="text-white text-2xl font-bold ">
+      Personal Equipment
+      </h2>
+      <p class="ml-2.5">
+      &bull; Sleeping Bag<br>
+&bull; Closed Cell Ground Pad<br>
+&bull; Rain Gear<br>
+&bull; Compass<br>
+&bull; Personal First Aid Kit<br>
+&bull; Sunscreen<br>
+&bull; Insect Repellant<br>
+&bull; Mess Kit with Cup<br>
+&bull; Water Bottle<br>
+&bull; Flashlight<br>
+&bull; A Duffle Bag or Backpack (optional)<br>
+&bull; Camp Chair (optional)<br>
+
+      </p>
+    </div>
+    <div>
+      <h2 class="text-white text-2xl font-bold ">
+      Troop Equipment
+      </h2>
+      <p class="ml-2.5">
+      &bull; Tents<br>
+&bull; Pots<br>
+&bull; Pans<br>
+&bull; Cooking Gear<br>
+&bull; Stoves<br>
+&bull; Fuel<br>
+&bull; Matches<br>
+&bull; Dining Shelter<br>
+
+      </p>
+    </div>
+</div>
+    </p>
+  </ul>
+
+      <h1 class="text-[50px] text-[var(--accent-2)] font-bold mb-[25px]">
+    Schedule of Troop Events 
+  </h1>
+    <ul class="flex flex-col gap-4 text-[var(--main-1)]">
+    <p>
+      All our troop's events are listed with detailed information online at troop306avon.com/events.
+      <p class="ml-2.5">
+      &bull; The Troop travels in BSA Class A shirts<br>
+      &bull; A trip form is provided for each trip detailing departure time, return time, items needed for trip, and parent permission slip. These are online and the permission form should be printed out and signed by the parent and scout.
+      </p>
+    </p>
+  </ul>
+  
+        <h1 class="text-[50px] text-[var(--accent-2)] font-bold mb-[25px]">
+    Schedule of Troop Events 
+  </h1>
+    <ul class="flex flex-col gap-4 text-[var(--main-1)]">
+    <p>
+      All our troop's events are listed with detailed information online at troop306avon.com/events.
+      <p>
+      The Scoutmaster relates closely to each of the links in the chain of troop operations: the Scouts, the Junior Leaders, the Patrol Leaders Council, the Assistant Scoutmasters, and the Troop Committee.
+      <br><br>
+      For a complete contact list and list of trained leaders, both youth and adults, please visit troop306avon.com/contactus
+      </p>
+      <h2 class="text-white text-2xl font-bold my-5">
+      Youth Leadership Roles
+    </h2>
+    <div class="space-y-2">
+  <div class="flex items-start gap-2">
+    <span class="w-6 shrink-0">1.</span>
+    <p>Senior Patrol Leader (SPL) - The senior leader of the troop (must be Star rank or above).</p>
+  </div>
+  <div class="flex items-start gap-2">
+    <span class="w-6 shrink-0">2.</span>
+    <p>Assistant Senior Patrol Leader (ASPL) - Assists the SPL (must be Star rank or above).</p>
+  </div>
+  <div class="flex items-start gap-2">
+    <span class="w-6 shrink-0">3.</span>
+    <p>Quartermaster (QM) - Responsible for scouting equipment (must be Star rank or above).</p>
+  </div>
+  <div class="flex items-start gap-2">
+    <span class="w-6 shrink-0">4.</span>
+    <p>Historian - Responsible for tracking and recording events for future generations to learn from.</p>
+  </div>
+  <div class="flex items-start gap-2">
+    <span class="w-6 shrink-0">5.</span>
+    <p>Librarian - Responsible for storing and organizing the unit's library.</p>
+  </div>
+  <div class="flex items-start gap-2">
+    <span class="w-6 shrink-0">6.</span>
+    <p>Scribe - Responsible for keeping written records and attendance.</p>
+  </div>
+  <div class="flex items-start gap-2">
+    <span class="w-6 shrink-0">7.</span>
+    <p>Chaplain's Aid - Responsible for observing religious events, prayers in the troop, and camping chapel.</p>
+  </div>
+  <div class="flex items-start gap-2">
+    <span class="w-6 shrink-0">8.</span>
+    <p>Bugler - Responsible for sounding bugle calls when needed in the troop.</p>
+  </div>
+  <div class="flex items-start gap-2">
+    <span class="w-6 shrink-0">9.</span>
+    <p>Webmaster - Responsible for minor maintenance and upkeep of the troop's web site and social pages.</p>
+  </div>
+  <div class="flex items-start gap-2">
+    <span class="w-6 shrink-0">10.</span>
+    <p>Patrol Leaders - Responsible for organizing and leading a patrol.</p>
+  </div>
+</div>
+
+  <h1 class="text-[50px] text-[var(--accent-2)] font-bold mb-[25px]">
+    Junior Leader Council
+  </h1>
+  <p>
+    It's been said that the Patrol Leaders' Council is probably Boy Scout's finest example of junior leaders in action. Each patrol elects its own leader as their head to form the patrol leaders' council. It is the council's job to plan and run the troop program.
+    <br>
+Patrol Leaders are to represent his patrol on the council and interpret to his patrol the plans and decisions the council makes. Every scout in the troop, from the Senior Patrol Leader to the newest Scout, has a voice in the Troop's operation.
+<br>
+The Junior Leader Council (JLC) is an elected position, which is help for six months at a time. The Council charge is to develop camping schedules throughout the year. They assist in the Court of Honor, Troop meetings and camp-outs. The JLC meets once a month on Tuesday evenings at 6:30, one half hour before the regular weekly Scout meeting.
+  </p>
+
+  <h1 class="text-[50px] text-[var(--accent-2)] font-bold mb-[25px]">
+    Boy Led Troop
+  </h1>
+  <p>
+    We are a boy led Troop with a Senior Patrol Leader (SPL), and Assistant Senior Patrol Leader (ASPL) who run the meetings.
+    <br>
+    The Troop is divided by Patrols, each having a scout patrol leader and assistant. Each patrol has a parent patrol advisor to assist them during the meetings and activities.
+  </p>
+
+  <h1 class="text-[50px] text-[var(--accent-2)] font-bold mb-[25px]">
+    Court of Honor Celebrations
+  </h1>
+  <p>
+    Each quarter we hold a court of honor to recognize the scouts for their individual advancements and accomplishments. Our goal is to ensure that a Scout is recognized immediately for achievements. All parents are encouraged to attend the Court of Honor whether or not their own son is receiving an award. This is an important part of the Scouting program and all Scouts look forward to this event. Our main Court of Honor dinners are held after summer camp and again around the beginning of each year.
+  </p>
+
+   <h1 class="text-[50px] text-[var(--accent-2)] font-bold mb-[25px]">
+    Troop Committee
+  </h1>
+  <p>
+    Parents are encouraged to join or help the troop committee and attend scout outings.
+  </p>
+  <div class="space-y-2">
+  <div class="flex items-start gap-2">
+    <span class="w-6 shrink-0">&bull;</span>
+    <p>The Troop Committee meets the third Thursday of each month.</p>
+  </div>
+  <div class="flex items-start gap-2">
+    <span class="w-6 shrink-0">&bull;</span>
+    <p>All parents are encouraged to attend even if they do not hold a leadership position.</p>
+  </div>
+</div>
+
+
+  </ul>
+  
+</div>
+</div>
+<!--Footer-->
+<!--Footer-->
+<div>
+  <ul class="flex h-fit flex-col md:flex-row md:justify-between md:items-start bg-[#3E3E3E] px-5 md:px-[120px] pt-[120px] pb-[100px] gap-10">
+      <div class="flex items-center gap-[30px]">
+      <svg width="54" height="61" viewBox="0 0 54 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M26.8857 0C26.9415 0.0279216 26.9974 0.0558431 27.0549 0.0846108C27.1232 0.324054 27.1832 0.5616 27.24 0.803803C27.5453 2.02811 28.0321 3.13839 28.6625 4.23054C28.7061 4.30647 28.7497 4.38239 28.7947 4.46062C29.3254 5.38285 29.8635 6.29697 30.4393 7.19192C30.538 7.3488 30.6367 7.50568 30.7355 7.66257C30.9306 7.96993 31.1329 8.26993 31.3436 8.56684C31.5064 8.79657 31.6615 9.02412 31.7984 9.27017C31.9633 9.56271 32.1442 9.83724 32.3315 10.1156C32.7292 10.7098 33.0986 11.3107 33.4354 11.9414C33.5812 12.2043 33.7381 12.4581 33.8978 12.7128C34.5171 13.7131 35.0182 14.7343 35.4506 15.8282C35.5423 16.0571 35.6405 16.2832 35.7381 16.5097C36.3673 18.0322 36.7352 19.5883 36.7851 21.2373C36.8386 21.2075 36.892 21.1778 36.9471 21.1471C37.2024 21.0062 37.4591 20.8679 37.7159 20.7296C37.8037 20.6809 37.8915 20.6321 37.9819 20.5819C38.8152 20.1381 39.6798 19.8622 40.5926 19.6297C40.6551 19.613 40.7175 19.5963 40.7818 19.5791C41.4715 19.4159 42.1727 19.4269 42.8771 19.4288C42.9431 19.4288 43.0091 19.4288 43.077 19.4289C44.0637 19.4321 44.9813 19.4807 45.9231 19.7989C46.0032 19.8255 46.0032 19.8255 46.085 19.8525C48.6595 20.7253 50.7308 22.6676 51.9867 25.0613C53.3358 27.8938 53.6655 31.3011 52.6387 34.2875C51.7098 36.8742 50.0287 39.271 47.6999 40.7824C47.5906 40.8581 47.4816 40.9341 47.3727 41.0105C46.7616 41.4382 46.1463 41.8477 45.5 42.2208C45.3674 42.301 45.3674 42.301 45.232 42.3827C45.1407 42.4375 45.0494 42.4922 44.9554 42.5487C44.8717 42.599 44.7881 42.6494 44.7019 42.7014C44.4847 42.8131 44.4847 42.8131 44.2309 42.8131C44.2742 42.4809 44.3284 42.1567 44.4001 41.8295C44.5048 41.3139 44.5429 40.7995 44.5693 40.2747C44.5739 40.1968 44.5785 40.1188 44.5832 40.0384C44.6362 38.3314 44.245 36.6371 43.0834 35.3462C42.3326 34.6417 41.1955 34.1742 40.1644 34.1845C38.3917 34.2774 36.9889 34.9426 35.7698 36.2134C34.8595 37.232 34.3329 38.4351 33.9295 39.7248C33.9036 39.8061 33.8777 39.8874 33.851 39.9712C33.6836 40.5237 33.6 41.0522 33.5699 41.6285C33.6288 41.6661 33.6877 41.7038 33.7484 41.7425C34.409 42.1706 34.9801 42.7007 35.2251 43.4711C35.369 44.2019 35.2943 44.8723 34.9237 45.5206C34.5289 46.0893 34.0075 46.5595 33.3161 46.7052C33.379 47.1748 33.379 47.1748 33.4853 47.6359C33.5412 47.6359 33.597 47.6359 33.6545 47.6359C33.7445 47.7386 33.8302 47.8451 33.9137 47.9532C34.2977 48.4072 34.7686 48.6206 35.3467 48.7358C36.0463 48.7929 36.5988 48.7563 37.2082 48.3974C37.3469 48.3162 37.3469 48.3162 37.4885 48.2334C38.0952 47.7678 38.3868 47.095 38.562 46.3667C38.5917 46.1008 38.6045 45.8355 38.6148 45.5682C38.6181 45.4982 38.6214 45.4283 38.6248 45.3562C38.6327 45.1854 38.6397 45.0146 38.6466 44.8437C39.0489 44.886 39.3186 45.0748 39.6355 45.3091C39.6876 45.3472 39.7397 45.3852 39.7933 45.4245C41.4376 46.6429 42.8477 48.3635 43.2156 50.428C43.3609 51.9515 43.0531 53.2117 42.1259 54.4474C41.194 55.5599 39.7437 56.2768 38.3081 56.4354C36.1729 56.5765 34.2764 56.1148 32.6455 54.6973C32.5015 54.5662 32.3588 54.4336 32.2181 54.299C32.049 54.1337 32.049 54.1337 31.7931 54.0663C31.771 54.1254 31.7488 54.1845 31.726 54.2454C31.0952 55.752 30.0227 57.1279 28.9438 58.3376C28.7792 58.5263 28.6265 58.7238 28.4721 58.9208C28.1286 59.3447 27.7521 59.7304 27.3669 60.116C27.3081 60.1748 27.2494 60.2336 27.1888 60.2942C26.8707 60.6089 26.8707 60.6089 26.7164 60.7506C26.6631 60.8001 26.6097 60.8497 26.5548 60.9008C26.378 61.0044 26.378 61.0044 26.1672 60.9974C25.9171 60.9059 25.7911 60.7972 25.6043 60.6081C25.5403 60.544 25.4764 60.4798 25.4106 60.4138C25.3109 60.3109 25.3109 60.3109 25.2093 60.2059C25.1409 60.1363 25.0726 60.0667 25.0021 59.995C24.5534 59.5339 24.1394 59.0668 23.7551 58.5507C23.6461 58.4165 23.5368 58.2825 23.4272 58.1488C22.47 56.949 21.5234 55.6522 20.8968 54.2461C20.8043 54.0385 20.8043 54.0385 20.5399 53.9817C20.3937 54.0617 20.3937 54.0617 20.251 54.1902C20.1659 54.26 20.1659 54.26 20.0792 54.3311C19.9879 54.4068 19.9879 54.4068 19.8947 54.4841C18.4522 55.6331 16.8805 56.1509 15.0402 56.097C14.9681 56.0955 14.896 56.0941 14.8217 56.0927C13.2465 56.01 11.779 55.2524 10.7032 54.1189C9.72554 52.9609 9.36555 51.7008 9.43667 50.2103C9.56596 48.8255 10.3022 47.6824 11.1481 46.6206C11.1978 46.5576 11.2475 46.4947 11.2988 46.4298C11.6763 45.9748 12.1151 45.621 12.5864 45.2668C12.7069 45.1757 12.7069 45.1757 12.8297 45.0827C13.8343 44.3361 13.8343 44.3361 14.194 44.3361C14.1944 44.3927 14.1947 44.4493 14.1951 44.5077C14.1653 45.9734 14.1653 45.9734 14.7017 47.2974C14.7384 47.3538 14.775 47.4102 14.8128 47.4683C15.2093 48.0034 15.8291 48.2973 16.4785 48.3974C17.2855 48.4679 18.0363 48.3188 18.6784 47.8051C19.1335 47.3961 19.1335 47.3961 19.4399 46.8744C19.4541 46.6487 19.4541 46.6487 19.4399 46.4513C19.3404 46.406 19.241 46.3606 19.1385 46.3138C18.4347 45.9564 18.0015 45.4756 17.6631 44.7591C17.4873 44.075 17.5162 43.337 17.8482 42.707C18.2028 42.1374 18.6552 41.6578 19.2707 41.3747C19.3615 39.6196 18.5754 37.5882 17.515 36.187C17.4093 36.0442 17.4093 36.0442 17.4093 35.875C17.3386 35.8467 17.3386 35.8467 17.2665 35.8178C17.0114 35.6717 16.8475 35.4823 16.6478 35.2668C15.6224 34.2084 14.293 33.7634 12.835 33.7333C11.8666 33.7428 11.0666 33.9635 10.301 34.5645C10.1327 34.6904 10.1327 34.6904 9.8789 34.775C9.81808 34.8855 9.76234 34.9989 9.70968 35.1135C9.61766 35.2414 9.52409 35.3683 9.4294 35.4942C8.31916 37.08 8.24959 39.1749 8.52512 41.0362C8.54083 41.1217 8.55654 41.2073 8.57272 41.2954C8.61486 41.5783 8.61545 41.8505 8.60973 42.1362C6.88038 41.6106 5.01524 39.9643 3.78692 38.6671C3.71537 38.5973 3.64382 38.5275 3.5701 38.4556C2.66867 37.5311 1.94183 36.511 1.33321 35.3726C1.30262 35.3157 1.27203 35.2587 1.24052 35.2001C1.05662 34.8449 0.919522 34.4889 0.79877 34.1078C0.719942 33.864 0.623084 33.6279 0.529403 33.3895C-0.494271 30.4979 0.0709958 27.1802 1.33354 24.4618C1.74077 23.6093 1.74077 23.6093 2.01009 23.268C2.06594 23.268 2.12178 23.268 2.17931 23.268C2.19731 23.2093 2.21531 23.1506 2.23385 23.0902C2.3825 22.7723 2.58856 22.5569 2.82976 22.3055C2.87528 22.2573 2.9208 22.2091 2.96771 22.1594C3.09913 22.0206 3.2314 21.8827 3.36387 21.745C3.42745 21.6779 3.49104 21.6108 3.55655 21.5417C3.68579 21.4081 3.82034 21.2796 3.95614 21.1527C4.01198 21.1527 4.06783 21.1527 4.12536 21.1527C4.12536 21.0969 4.12536 21.041 4.12536 20.9835C5.31547 20.0391 6.70968 19.4435 8.18668 19.122C8.24764 19.1072 8.30861 19.0923 8.37142 19.0769C10.9957 18.4782 13.6448 19.2183 15.8981 20.5543C16.1149 20.6793 16.3379 20.7901 16.5632 20.8989C16.5682 20.8518 16.5732 20.8047 16.5784 20.7562C16.7854 18.8919 17.3055 17.2202 18.0015 15.4838C18.0574 15.4838 18.1132 15.4838 18.1708 15.4838C18.1759 15.4166 18.181 15.3494 18.1863 15.2802C18.2803 14.8661 18.4742 14.5389 18.6837 14.1723C18.7261 14.0969 18.7685 14.0216 18.8122 13.9439C18.8974 13.7926 18.983 13.6414 19.0689 13.4905C19.1671 13.3174 19.2638 13.1437 19.3596 12.9692C20.0062 11.8062 20.7516 10.6991 21.5139 9.60928C22.377 8.37475 23.2143 7.12196 24.0466 5.86653C24.1359 5.7324 24.2256 5.59858 24.3157 5.46504C24.5409 5.13084 24.7562 4.79866 24.9449 4.44207C25.0955 4.16006 25.2475 3.87947 25.405 3.60125C25.8247 2.84421 26.1809 2.08773 26.4626 1.26916C26.508 1.14914 26.5538 1.02926 26.6001 0.909566C26.7108 0.607805 26.8017 0.309894 26.8857 0Z" fill="white" />
+      </svg>
+      <h3 class="text-white">
+      Copyright © 2024 Troop 306 <br>troop306avon.com
+      </h3>
+      </div>
+      <div class="flex flex-row justify-center gap-10 md:gap-[200px]">
+      <ul class="flex flex-col gap-5">
+          <li>
+          <a href="#" class="text-[var(--text-3)] hover:underline">Home</a>
+          </li>
+          <li>
+          <a href="#" class="text-[var(--text-3)] hover:underline">About</a>
+          </li>
+          <li>
+          <a href="#" class="text-[var(--text-3)] hover:underline">Troop</a>
+          </li>
+          <li>
+          <a href="#" class="text-[var(--text-3)] hover:underline">Contact</a>
+          </li>
+      </ul>
+      <ul class="flex flex-col gap-5">
+          <li>
+          <a href="#" class="text-[var(--text-3)] hover:underline">Connect</a>
+          </li>
+          <li>
+          <a href="#" class="text-[var(--text-3)] hover:underline">Handbook</a>
+          </li>
+          <li>
+          <a href="#" class="text-[var(--text-3)] hover:underline">Calendar</a>
+          </li>
+          <li>
+          <a href="#" class="text-[var(--text-3)] hover:underline">Gear</a>
+          </li>
+          <li>
+          <a href="#" class="text-[var(--text-3)] hover:underline">Join</a>
+          </li>
+      </ul>
+
+      <ul class="flex flex-col gap-5">
+          <li>
+          <a href="#" class="text-[var(--text-3)] hover:underline">Support</a>
+          </li>
+          <li>
+          <a href="#" class="text-[var(--text-3)] hover:underline">Donate</a>
+          </li>
+      </ul>
+      </div>
+  </ul>
+  </div>
+  </body>
+</html>
